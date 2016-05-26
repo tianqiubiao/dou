@@ -3387,9 +3387,13 @@ b:hover img {
 .jyjlLIst {
     padding: 18px 0;;
 }
-
+.jyjlLIst .jywidth125{
+    width: 125px;
+    padding-left: 5px;
+}
 .jyjlLIst div div input {
-    /*border:none;*/
+    border:none;
+    width:100%;
 }
 
 .jyjlLIst div {
