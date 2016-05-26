@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
     <link rel="stylesheet" href="public/stylesheets/01.css">
 
     <style>
-
+@media (max-width: 1101px) {
+    html,
+    .top,
+    .second,
+    .banCard,
+    .oFoot,
+    .sign_on,
+    .banner img{
+        width: 1100px!important;
+    }
+    .banner img{
+        height: 350px!important;
+    }
+}
 
     </style>
     <script src="public/javascripts/jquery.min.js"></script>
@@ -1941,7 +1955,7 @@
         </div>
     </div>
 </div>
-<div style="width:100%;">
+<div style="width:100%;" class="oFoot">
     <div class="foot">
         <div class="footT">
             <div class="footTF">
@@ -2059,7 +2073,7 @@
             return {top: t, left: l};
         };
 
-        window.setTimeout(init, 0);
+        window.setTimeout(function(){init()}, 0);
         window.onscroll = init;
 
 
