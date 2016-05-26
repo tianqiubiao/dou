@@ -355,6 +355,8 @@ margin-bottom: 19px;
 }
 .pic .picList .picListR .picListRT .pic_left{
     float: left;
+    width: 118px;
+    height: 118px;;;;
 }
 .pic .picList .picListR .picListRT .pic_left, .pic .picList .picListR .picListRT .pic_right {
     padding-left: 20px;
@@ -468,6 +470,7 @@ margin-bottom: 19px;
 
 .foot .footT .footTF .footTFT {
     height: 105px;
+    text-align: center;
 }
 
 .foot .footT .footTF .footTFF {
