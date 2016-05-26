@@ -49,9 +49,10 @@
         <!--首页默认显示-->
         <div class=" banCard0 navDis">
             <div class="banner">
-                <img src="public/images/default.gif" trueImg="public/images/afterNav.png" alt=""
-                     style="position:absolute">
-
+                <div>
+                    <img src="public/images/default.gif" trueImg="public/images/afterNav.png" alt=""
+                         style="position:absolute">
+                </div>
                 <div class="bannerZC">
                     <div class="bannerRz">
                         <div class="bannerRzLio">
@@ -1997,73 +1998,73 @@
 <script src="public/javascripts/sign_in.js"></script>
 <script>
 
-            (function () {
+    (function () {
 
-                 var imgList = document.getElementsByTagName('img');
+        var imgList = document.getElementsByTagName('img');
 
-                 function init() {
-                     for (var i = 0; i < imgList.length; i++) {
-                         ~function (i) {
-                             var curImg = imgList[i];
+        function init() {
+            for (var i = 0; i < imgList.length; i++) {
+                ~function (i) {
+                    var curImg = imgList[i];
 
-                             if (curImg.isLoad) return;
+                    if (curImg.isLoad) return;
 
-                             var curImgT = utils.offset(curImg).top + curImg.offsetHeight;
+                    var curImgT = utils.offset(curImg).top + curImg.offsetHeight;
 
-                             var winT = (document.documentElement.clientHeight || document.body.clientHeight) + (document.documentElement.scrollTop || document.body.scrollTop);
+                    var winT = (document.documentElement.clientHeight || document.body.clientHeight) + (document.documentElement.scrollTop || document.body.scrollTop);
 
-                             if (curImgT < winT) {
-                                 var oImg = new Image;
-                                 oImg.src = curImg.getAttribute("trueImg");
-                                 oImg.onload = function () {
+                    if (curImgT < winT) {
+                        var oImg = new Image;
+                        oImg.src = curImg.getAttribute("trueImg");
+                        oImg.onload = function () {
 
-                                     curImg.src = this.src;
-                                     curImg.isLoad = true;
-                                     fadeIn(curImg);
-                                 }
-                             }
-                         }(i);
-                     }
-                 }
+                            curImg.src = this.src;
+                            curImg.isLoad = true;
+                            fadeIn(curImg);
+                        }
+                    }
+                }(i);
+            }
+        }
 
-                 function fadeIn(curImg) {
-                     var step = (1 / 100) * 10;
-                     var count = 0;
-                     var timer = window.setInterval(function () {
-                                                        if (count >= 1) {
-                                                            window.clearInterval(timer);
-                                                            curImg.style.opacity = 1;
-                                                            curImg.style.filter = "alpha(opacity=100)";
-                                                            return;
-                                                        }
-                                                        count += step;
-                                                        curImg.style.opacity = count;
-                                                        curImg.style.filter = "alpha(opacity=" + count * 100 + ")";
-                                                    }, 10
-                     );
-                 }
+        function fadeIn(curImg) {
+            var step = (1 / 100) * 10;
+            var count = 0;
+            var timer = window.setInterval(function () {
+                                               if (count >= 1) {
+                                                   window.clearInterval(timer);
+                                                   curImg.style.opacity = 1;
+                                                   curImg.style.filter = "alpha(opacity=100)";
+                                                   return;
+                                               }
+                                               count += step;
+                                               curImg.style.opacity = count;
+                                               curImg.style.filter = "alpha(opacity=" + count * 100 + ")";
+                                           }, 10
+            );
+        }
 
-                 var utils = {};
-                 utils.offset = function (curEle) {
-                     var t = curEle.offsetTop, l = curEle.offsetLeft, p = curEle.offsetParent;
-                     while (p) {
-                         if (navigator.userAgent.indexOf("MSIE 8.0") === -1) {
-                             t += p.clientTop;
-                             l += p.clientLeft;
-                         }
-                         t += p.offsetTop;
-                         l += p.offsetLeft;
-                         p = p.offsetParent;
-                     }
-                     return {top: t, left: l};
-                 };
+        var utils = {};
+        utils.offset = function (curEle) {
+            var t = curEle.offsetTop, l = curEle.offsetLeft, p = curEle.offsetParent;
+            while (p) {
+                if (navigator.userAgent.indexOf("MSIE 8.0") === -1) {
+                    t += p.clientTop;
+                    l += p.clientLeft;
+                }
+                t += p.offsetTop;
+                l += p.offsetLeft;
+                p = p.offsetParent;
+            }
+            return {top: t, left: l};
+        };
 
-            window.setTimeout(init, 10);
-            window.onscroll = init;
+        window.setTimeout(init, 0);
+        window.onscroll = init;
 
 
-             })()
-//           
+    })()
+    //
     $(".sign").click(function () {
                          if ($(this).text() === '登录') {
 
@@ -2076,15 +2077,18 @@
                              $('.my_account').css('display', 'block');
 
                          }
-                     })
+                     }
+    )
     //注册页面
     $('.id_zh').click(function () {
 //        window.open('register.html')
                           register();
-                      })
+                      }
+    )
     $('.id_helpIng').click(function () {
                                window.open('helpIng.html')
-                           })
+                           }
+    )
     code('banCard0', 'bandCard', 'banCard0', 'navColor', 'div');
     code('bandCard1', 'bandCard2', 'bandCard1', 'greenNum', 'li');
     code('my_accountLeft', 'my_accountRight', 'my_account01', 'bg', 'div');
@@ -2145,7 +2149,8 @@
                                 return;
                             }
 
-                        })
+                        }
+    )
     function accountQianDao() {
         var timer = window.setTimeout(function () {
                                           $('#my_account01Top').css('display', 'none');
@@ -2162,6 +2167,7 @@
             function () {
                 $('#my_account01Top').css('display', 'block');
 //                $('#my_account01Foot').css('display', 'none');
-            })
+            }
+    )
 
 </script>

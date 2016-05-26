@@ -68,7 +68,7 @@ html, body {
 
 .wx:hover .w {
     display: block;
-
+z-index: 5;
 }
 .top{
     padding-top: 5px;
