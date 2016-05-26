@@ -22,7 +22,7 @@
             <li class="topNavPad">
                 <ul class="topNavPeople">
                     <li class="id_zh to2 pointer">注册<span><p>领活动本金</p></span></li>
-                    <li class="sign pointer">爱谁谁</li>
+                    <li class="sign pointer ">用户名</li>
                 </ul>
             </li>
             <li class="id_helpIng pointer">帮助中心</li>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="picListD   picListc">
                             <div class="picLista">
-                                <img src="public/images/default.gif" trueImg= src="public/images/baoZ.png">
+                                <img src="public/images/default.gif" trueImg="public/images/baoZ.png">
                                 <p>有保障</p>
                             </div>
                             <div class="picListe">
@@ -102,7 +102,7 @@
                         </div>
                         <div class="picListD picListc">
                             <div class="picLista">
-                                <img src="public/images/default.gif" trueImg= src="public/images/save.png" alt="">
+                                <img src="public/images/default.gif" trueImg="public/images/save.png" alt="">
                                 <p>超安全</p>
                             </div>
                             <div class="picListe picListf">
@@ -115,7 +115,7 @@
                     </div>
                     <div class="picListR">
                         <div class="picListRT">
-                            <div class="pic_left"><img src="public/images/default.gif" trueImg= src="public/images/erM.png"></div>
+                            <div class="pic_left"><img src="public/images/default.gif" trueImg="public/images/erM.png"></div>
                             <div class="pic_right">
                                 <div><p>扫码下载</p>
                                     <p>P兜理财手机版</p></div>
@@ -784,11 +784,11 @@
                             <div class="manager-item clear">
                                 <ul class="module-one">
                                     <li class="img" data-name="manager-9"><img  src="public/images/default.gif" trueImg="public/images/manager_09.jpg"/></li>
-                                    <li><img  src="public/images/default.gif" trueImg=="public/images/about_line.jpg"/></li>
-                                    <li class="img" data-name="manager-1"><img  src="public/images/default.gif" trueImg="public/images/manager_01.jpg"/></li>
-                                    <li><img  src="public/images/default.gif" trueImg=c="public/images/about_line.jpg"/></li>
-                                    <li class="img" data-name="manager-2"><img  src="public/images/default.gif" trueImg="public/images/manager_02.jpg"/></li>
-                                    <li class="clear-right img"><img  src="public/images/default.gif" trueImg="public/images/about_line.jpg"/></li>
+                                    <li><img  src="public/images/default.gif" trueImg="public/images/about_line.jpg"></li>
+                                    <li class="img" data-name="manager-1"><img  src="public/images/default.gif" trueImg="public/images/manager_01.jpg"></li>
+                                    <li><img  src="public/images/default.gif" trueImg="public/images/about_line.jpg"></li>
+                                    <li class="img" data-name="manager-2"><img  src="public/images/default.gif" trueImg="public/images/manager_02.jpg"></li>
+                                    <li class="clear-right img"><img  src="public/images/default.gif" trueImg="public/images/about_line.jpg"></li>
                                 </ul>
                                 <ul class="module-one">
                                     <li><img  src="public/images/default.gif" trueImg="public/images/about_line.jpg"/></li>
@@ -1049,7 +1049,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div><img  src="public/images/default.gif" trueImg="public/images/about_img.png" alt=""></div>
+                                    <div><img  src="public/images/default.gif" trueImg="public/images/about_img.png" alt=""/></div>
                                     <div>
                                         P兜理财APP上线
                                     </div>
@@ -1062,7 +1062,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div><img  src="public/images/default.gif" trueImg="public/images/about_img.png" alt=""></div>
+                                    <div><img  src="public/images/default.gif" trueImg="public/images/about_img.png" alt=""/></div>
                                     <div>
                                         P兜理财APP上线
                                     </div>
@@ -1102,7 +1102,9 @@
                 <!--联系-->
                 <div class="bandCard1">
                     <div class="about_call paddbottom60">
-                        <div class="about_map"  src="public/images/default.gif" trueImg="public/images/about_map.png"></div>
+                        <div class="about_map" >
+                            <img  src="public/images/default.gif" trueImg="public/images/about_map.png">
+                        </div>
                         <div>
                             <p>&nbsp;</p>
                         </div>
@@ -2011,107 +2013,122 @@
             }
             return {top: t, left: l};
         };
-        window.setTimeout(init, 1000);
-        window.onscroll = init;
+
+            window.setTimeout(init, 1000);
+            window.onscroll = init;
 
 
-        $(".sign").click(function () {
-                             if ($(this).text() === '登录') {
 
-                                 login();
-//                             register();
-                                 $('.sign_on').css('display', 'block');
-                             } else {
 
-                                 $('#bandCard').css('display', 'none');
-                                 $('.my_account').css('display', 'block');
 
-                             }
-                         }
-        )
 
-        //注册页面
-        $('.id_zh').click(function () {
-//        window.open('register.html')
-                              register();
-                          }
-        )
-        $('.id_helpIng').click(function () {
-                                   window.open('helpIng.html')
-                               }
-        )
-        $('.banOuter .bandCard1').css('display', 'none');
-        $('.my_accountRight .my_account01').css('display', 'none');
-        code('banCard0', 'bandCard', 'banCard0', 'navColor', 'div');
-        code('bandCard1', 'bandCard2', 'bandCard1', 'greenNum', 'li');
-        code('my_accountLeft', 'my_accountRight', 'my_account01', 'bg', 'div');
-        function code(a, b, c, d, e) {
-            var ulList = document.getElementById(a), ulLists = ulList.getElementsByTagName(e);
-            var divList = document.getElementById(b), divLists = divList.getElementsByClassName(c);
-            ~function bindCard(far, son) {
-                for (var i = 0, len = far.length; i < len; i++) {
-                    ~function (i) {
-                        far[i].onclick = function (e) {
-                            e.stopPropagation()
-                            e.returnValue = false;
-                            for (var j = 0, len = son.length; j < len; j++) {
-                                if (j === i) {
-                                    $('#bandCard').css('display', 'block');
-                                    far[i].className = d;
-                                    son[i].className = c + " navDis";
-                                    $('.my_account').css('display', 'none')
-                                    continue;
-                                } else {
-                                    $('#bandCard').css('display', 'block');
-                                    far[j].className = "  pointer ";
-                                    son[j].className = c;
-                                    $('.my_account').css('display', 'none')
-                                }
-                            }
-                        }
-                    }(i)
-                }
-            }(ulLists, divLists)
-        }
-
-        $('#true_qd').click(function () {
-                                var boole = document.getElementById('bool');
-                                if (!boole.bool) {
-                                    boole.setAttribute('bool', 'true');
-                                }
-
-                                console.log(boole.bool)
-                                if (!!(boole.bool = "true")) {
-                                    boole.setAttribute('bool', 'false');
-                                    $(this).text('已签到');
-                                    $(this).attr("class", 'noqd')
-                                    $('#my_account_qd').css('display', 'block');
-
-                                    accountQianDao();
-                                    $('#true_qd').unbind('click');
-                                    return;
-                                }
-
-                            }
-        )
-        function accountQianDao() {
-            var timer = window.setTimeout(function () {
-                                              $('#my_account01Top').css('display', 'none');
-                                              $('#my_account01Foot').css('display', 'block');
-                                              $('#my_account_qd').css('display', 'none');
-
-                                              window.clearTimeout(timer);
-                                              accountQianDao = null;
-                                          }, 3000
-            )
-        }
-
-        $('#bool').click(
-                function () {
-                    $('#my_account01Top').css('display', 'block');
-                    $('#my_account01Foot').css('display', 'none');
-                }
-        )
 
     })()
+
+    $(".sign").click(function () {
+                         if ($(this).text() === '登录') {
+
+                             login();
+//                             register();
+                             $('.sign_on').css('display', 'block');
+                         } else {
+
+                             $('#bandCard').css('display', 'none');
+                             $('.my_account').css('display', 'block');
+
+                         }
+                     }
+    )
+
+    //注册页面
+    $('.id_zh').click(function () {
+//        window.open('register.html')
+                          register();
+                      }
+    )
+    $('.id_helpIng').click(function () {
+                               window.open('helpIng.html')
+                           }
+    )
+    code('banCard0', 'bandCard', 'banCard0', 'navColor', 'div');
+    code('bandCard1', 'bandCard2', 'bandCard1', 'greenNum', 'li');
+    code('my_accountLeft', 'my_accountRight', 'my_account01', 'bg', 'div');
+            $('.my_accountRight .my_account01').css('display', 'none');
+            $('.banOuter .bandCard1').css('display', 'none');
+    function code(a, b, c, d, e) {
+        var ulList = document.getElementById(a), ulLists = ulList.getElementsByTagName(e);
+        var divList = document.getElementById(b), divLists = divList.getElementsByClassName(c);
+        ~function bindCard(far, son) {
+            for (var i = 0, len = far.length; i < len; i++) {
+                ~function (i) {
+                    far[i].onclick = function (e) {
+                        e.stopPropagation()
+                        e.returnValue = false;
+                        for (var j = 0, len = son.length; j < len; j++) {
+                            if (j === i) {
+                                if(e.target===far[i]){
+                                    $('#bandCard').css('display', 'block');
+                                    $('.my_account').css('display', 'none')
+                                }else {
+                                    $('#bandCard').css('display', 'none');
+                                    $('.my_account').css('display', 'block')
+                                }
+
+                                far[i].className = d;
+                                son[i].className = c + " navDis";
+                                son[i].style.zIndex++;
+                                continue;
+                            } else {
+
+                                far[j].className = "  pointer ";
+                                son[j].className = c;
+
+                            }
+                        }
+                    }
+                }(i)
+            }
+        }(ulLists, divLists)
+    }
+
+    $('#true_qd').click(function () {
+//            init()
+                            var boole = document.getElementById('bool');
+                            if (!boole.bool) {
+                                boole.setAttribute('bool', 'true');
+                            }
+
+
+                            if (!!(boole.bool = "true")) {
+                                boole.setAttribute('bool', 'false');
+                                $(this).text('已签到');
+                                $(this).attr("class", 'noqd')
+                                $('#my_account_qd').css('display', 'block');
+
+                                accountQianDao();
+                                $('#true_qd').unbind('click');
+                                return;
+                            }
+
+                        }
+    )
+    function accountQianDao() {
+        var timer = window.setTimeout(function () {
+                                          $('#my_account01Top').css('display', 'none');
+                                          $('#my_account01Foot').css('display', 'block');
+                                          $('#my_account_qd').css('display', 'none');
+
+                                          window.clearTimeout(timer);
+                                          accountQianDao = null;
+                                      }, 3000
+        )
+    }
+
+    $('#bool').click(
+            function () {
+                $('#my_account01Top').css('display', 'block');
+//                $('#my_account01Foot').css('display', 'none');
+            }
+    )
+
 </script>
