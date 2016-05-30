@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" href="public/stylesheets/untitled.css">
+    <link rel="stylesheet" href="public/stylesheets/01.css">
 
     <style>
-@media (max-width: 1101px) {
-    html,
-    .top,
-    .second,
-    .banCard,
-    .oFoot,
-    .sign_on,
-    .banner img{
-        width: 1100px!important;
-    }
-    .banner img{
-        height: 350px!important;
-    }
-}
+        @media (max-width: 1101px) {
+            html,
+            .top,
+            .second,
+            .banCard,
+            .oFoot,
+            .sign_on,
+            .banner img {
+                width: 1100px !important;
+            }
+
+            .banner img {
+                height: 350px !important;
+            }
+        }
 
     </style>
     <script src="public/javascripts/jquery.min.js"></script>
@@ -493,8 +494,8 @@
                 </div>
                 <!--表头列表-->
                 <div class="moneyT">
-                    <div class="moneyOuter">
-                        <div><span>项目状态：</span>
+                    <div class="moneyOuter ">
+                        <div class="money_item_list"><span>项目状态：</span>
                             <ul>
                                 <li class="bgOrange">全部</li>
                                 <li>投标中</li>
@@ -503,7 +504,7 @@
                                 <li>已结束</li>
                             </ul>
                         </div>
-                        <div class="border"><span>项目期限：</span>
+                        <div class="border money_item_list"><span>项目期限：</span>
                             <ul>
                                 <li class="bgOrange">全部</li>
                                 <li>0-3个月</li>
@@ -513,7 +514,7 @@
                                 <li>12个月以上</li>
                             </ul>
                         </div>
-                        <div><span>项目收益：</span>
+                        <div class="money_item_list"><span>项目收益：</span>
                             <ul>
                                 <li class="bgOrange">全部</li>
                                 <li>9%以下</li>
@@ -650,7 +651,7 @@
                         <div class="bgPink moneyPageL">上一页</div>
                         <!--<div>-->
                         <ul>
-                            <li class="bgNum">1</li>
+                            <li class="bgListNum">1</li>
                             <li>2</li>
                             <li>3</li>
                             <li>4</li>
@@ -680,15 +681,15 @@
                 </div>
                 <div class="moneyT">
                     <div class="moneyOuter">
-                        <div><span>项目状态：</span>
+                        <div class="money_item_list"><span>项目状态：</span>
                             <ul>
                                 <li class="bgOrange">全部</li>
                                 <li>投标中</li>
                                 <li>已结束</li>
                             </ul>
                         </div>
-                        <div class="border"><span>项目期限：</span>
-                            <ul>
+                        <div class="border money_item_list"><span>项目期限：</span>
+                            <ul >
                                 <li class="bgOrange">全部</li>
                                 <li>0-90天</li>
                                 <li>90-180天</li>
@@ -697,7 +698,7 @@
 
                             </ul>
                         </div>
-                        <div><span>项目收益：</span>
+                        <div class="money_item_list"><span>项目收益：</span>
                             <ul>
                                 <li class="bgOrange">全部</li>
                                 <li>9% 以下</li>
@@ -1232,8 +1233,7 @@
                                         <div><span class="account_renzhengNo"></span>&nbsp;<a
                                                 href="javascript:;">未实名认证</a>
                                             &nbsp;&nbsp;</div>
-                                        <div><span class="account_renzhengNo"></span>&nbsp;<a
-                                                href="javascript:;">未绑卡</a>
+                                        <div><span class="account_renzhengYes"></span>&nbsp;已绑卡
                                         </div>
                                     </div>
 
@@ -1575,8 +1575,14 @@
                     </div>
                     <div class="row height50">
                         <div class="left text-left" style="width: 80px;">选择类型</div>
-                        <div class="left  inline_list"><span class="inline inline_lists">进行中</span><span
-                                class="inline">已结束</span></div>
+                        <div class="left  inline_list money_item_list">
+                            <ul>
+                                <li class=" bgOrange ">进行中</li>
+                                <li class="">已结束</li>
+                            </ul>
+
+
+                        </div>
                     </div>
                     <div class="height56">
                         投标中
@@ -1653,7 +1659,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="fyList row">
+                    <div class="fyList row ">
                         <div class="fylistBtn">上一页</div>
                         <div>
                             <ul>
@@ -1709,7 +1715,7 @@
                         </ul>
                     </div>
                     <div class="my_account03Foot"></div>
-                    <div class="fyList row">
+                    <div class="fyList row fyList3">
                         <div class="fylistBtn">上一页</div>
                         <div>
                             <ul>
@@ -1734,11 +1740,11 @@
                         <div class="topmasger"><span></span>&nbsp;交易记录</div>
                         <div class="jyjlLIst ">
                             <div class="row dateList height30">
-                                <div >请选择日期</div>
+                                <div>请选择日期</div>
                                 <div class="border1px jywidth125"><input type="date"></div>
                                 <div>-</div>
                                 <div class="border1px jywidth125" style="margin-right: 20px"><input type="date"></div>
-                                <div>
+                                <div class="money_item_list">
                                     <ul class="row">
                                         <li class="jylistbg">最近七天</li>
                                         <li>一个月</li>
@@ -1750,7 +1756,7 @@
                             </div>
                             <div class="row leiList height25">
                                 <div style="margin-right: 20px">交易类型</div>
-                                <div>
+                                <div class="money_item_list">
                                     <ul class="row">
                                         <li class="jylistbg">全部</li>
                                         <li>充值</li>
@@ -1796,7 +1802,7 @@
                         </ul>
                     </div>
                     <div class="my_account03Foot"></div>
-                    <div class="fyList row">
+                    <div class="fyList row fyList2">
                         <div class="fylistBtn">上一页</div>
                         <div>
                             <ul>
@@ -1892,7 +1898,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="fyList row">
+                    <div class="fyList row fyList1">
                         <div class="fylistBtn">上一页</div>
                         <div>
                             <ul>
@@ -1957,12 +1963,13 @@
 </div>
 <div style="width:100%;" class="oFoot">
     <div class="foot">
-        <div class="footT">
-            <div class="footTF">
+        <div class="footT row">
+            <div class="footTF left">
                 <div class="footTFT">友情链接</div>
-                <div class="footTFF"><img src="public/images/default.gif" trueImg="public/images/pNav.png" alt=""></div>
+                <div class="footTFF"><img src="public/images/default.gif" trueImg="public/images/pNav.png" alt=""
+                                          class="marauto block"></div>
             </div>
-            <div class="footTR">
+            <div class="footTR left">
                 <div class="footTRD1">
                     <ul>
                         <li>中根资产</li>
@@ -1980,38 +1987,39 @@
                         <li>网贷天眼</li>
                     </ul>
                 </div>
-                <div class="footTRD2">
-                    <div class="footTRD2T">
-                        <div>Copyright©2015-2018 新金服 (北京) 信息服务有限公司</div>
-                        <div>京ICP备15011054号-2</div>
-                        <div>地址: 北京四东城区建国门内大街18号恒基中心三层008A</div>
-                    </div>
-                    <div class="footTRD2F">
-                        <div class="footTRD2Fn">微信客服 P兜-小亮(xjfbank)</div>
-                        <div class="footTRD2Fu">
-                            <div class="footTRD2Fut">客服热线</div>
-
-                            <div class="footTRD2Fuf">
-                                <div>工作日09:00-22:00</div>
-                                <div>节假日10:00-19:00</div>
-                            </div>
+                <div class="footTRD2 row">
+                    <div class="footTRD2 row">
+                        <div class="footTRD2T left">
+                            <div>Copyright©2015-2018 新金服 (北京) 信息服务有限公司</div>
+                            <div>京ICP备15011054号-2</div>
+                            <div>地址: 北京四东城区建国门内大街18号恒基中心三层008A</div>
                         </div>
-                        <div class="footTRD2Fm"><a href="tel:400-859-9090">400-859-9090</a></div>
-                        <div class="footTRD2Fy">客服邮箱kf@xjfbank.com</div>
-                    </div>
-                </div>
+                        <div class="footTRD2F right">
+                            <div class="footTRD2Fn">微信客服 P兜-小亮(xjfbank)</div>
+                            <div class="footTRD2Fu">
+                                <div class="footTRD2Fut">客服热线</div>
 
+                                <div class="footTRD2Fuf">
+                                    <div>工作日09:00-22:00</div>
+                                    <div>节假日10:00-19:00</div>
+                                </div>
+                            </div>
+                            <div class="footTRD2Fm"><a href="tel:400-859-9090">400-859-9090</a></div>
+                            <div class="footTRD2Fy">客服邮箱kf@xjfbank.com</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+    <div class="sign_on"></div>
 </div>
-<div class="sign_on"></div>
 </body>
 </html>
 
 <script src="public/javascripts/sign_in.js"></script>
 <script>
-
     (function () {
 
         var imgList = document.getElementsByTagName('img');
@@ -2073,12 +2081,39 @@
             return {top: t, left: l};
         };
 
-        window.setTimeout(function(){init()}, 0);
+        window.setTimeout(function () {
+                              init()
+                          }, 0
+        );
         window.onscroll = init;
 
 
     })()
-    //
+ 
+    itemList("money_item_list", 'bgOrange');
+    itemList('fyList', 'fyListBg')
+    function itemList(list1, list2) {
+        var fys = document.getElementsByClassName(list1)
+        for (var o = 0, lengthA = fys.length; o < lengthA; o++) {
+            fyList(fys[o], list2)
+        }
+    }
+    function fyList(a, b) {
+        $(a).find('li').click(function () {
+                                  var fyList = $(a).find('li');
+                                  for (var i = 0, len = fyList.length; i < len; i++) {
+                                      if (this === fyList.get(i)) {
+                                          fyList.get(i).className = b
+                                      } else {
+                                          fyList.get(i).className = ""
+
+                                      }
+                                  }
+                              }
+        )
+    }
+
+
     $(".sign").click(function () {
                          if ($(this).text() === '登录') {
 
@@ -2129,7 +2164,7 @@
 
                                 far[i].className = d;
                                 son[i].className = c + " navDis";
-                                son[i].style.zIndex++;
+
                                 continue;
                             } else {
 
@@ -2176,12 +2211,10 @@
                                       }, 3000
         )
     }
-
-    $('#bool').click(
-            function () {
-                $('#my_account01Top').css('display', 'block');
-//                $('#my_account01Foot').css('display', 'none');
-            }
+    $('#bool').click(function () {
+                         $('#my_account01Top').css('display', 'block');
+                         $('#my_account01Foot').css('display', 'none');
+                     }
     )
 
 </script>
