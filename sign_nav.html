@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="public/stylesheets/01.css">
+    <style>
+        .uesr_name div {
+            margin: 0 10px;
+            width: 185px;
+            height: 25px;
+            line-height: 25px;;
+            padding: 0 10px;
+            background: #f77f96;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+
+        .uesr_name div span:nth-child(1) {
+            background: url("../images/people_nav.png") no-repeat;
+            -ms-background-position-y: 2px;
+            background-position-y: 2px;;
+        }
+
+        .topNav .topNavUser li {
+            border-left: 1px solid #EEEEEE;
+        }
+
+        .topNav .topNavUser li:first-child {
+            border: none;
+        }
+
+        .afterDis::after {
+            position: relative;
+            top: -10px;;
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        background: #f77f96;
+        content: '';
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="topNav row">
+        <ul class="topNavLeft">
+            <li class="to">客服电话: &nbsp;<a href="tel:400-859-9090">400-859-9090</a></li>
+            <li class="wx">客服微信 <img src="public/images/default.gif" trueImg="public/images/weixin.png" alt=""
+                                     class="w"></li>
+        </ul>
+        <ul class="right topNavUser">
+            <li class="to1">P兜APP</li>
+            <li class="uesr_name">
+                <div><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span>我的账户</span><span>[137****000]</span></div>
+            </li>
+            <li class="afterDis color_pink">
+                消息
+            </li>
+            <li>退出</li>
+            <li class="id_helpIng pointer">帮助中心</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

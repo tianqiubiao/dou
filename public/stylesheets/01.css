@@ -46,7 +46,42 @@ body, html {
 }
 
 .top .topNav {
-    height: 40px
+
+}
+.uesr_name div {
+    margin: 0 10px;
+    width: 185px;
+    height: 25px;
+    line-height: 25px;;
+    padding: 0 10px;
+    background: #f77f96;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.uesr_name div span:nth-child(1) {
+    background: url("../images/people_nav.png") no-repeat;
+    -ms-background-position-y: 2px;
+    background-position-y: 2px;;
+}
+
+.topNav .topNavUser li {
+    border-left: 1px solid #EEEEEE;
+}
+
+.topNav .topNavUser li:first-child {
+    border: none;
+}
+
+.afterDis::after {
+    position: relative;
+    top: -10px;;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #f77f96;
+    content: '';
 }
 .money_item_list li{
     cursor: pointer;
@@ -54,7 +89,9 @@ body, html {
 .wx {
     position: relative;
     padding-left: 30px !important;
-    background: url(../images/weixin.png) no-repeat
+    background: url(../images/weixin.png) no-repeat;
+    -ms-background-position-y: -3px;
+    background-position-y: -3px;;
 }
 
 .w {
@@ -73,11 +110,10 @@ body, html {
 }
 
 .top {
-    padding-top: 5px
+    padding:10px 0;
 }
 
 .topNav {
-    height: 35px;
     font-size: 16px
 }
 
@@ -87,7 +123,7 @@ body, html {
 
 .topNav ul {
     list-style: none;
-    line-height: 40px
+
 }
 
 .topNav .topNavLeft {
@@ -101,8 +137,8 @@ body, html {
 .topNav ul li {
     float: left;
     padding: 0 10px;
-    height: 30px;
-    line-height: 30px
+    height: 25px;
+    line-height: 25px
 }
 
 .top .topNav .topNavLeft li:nth-child(1) {
@@ -143,12 +179,17 @@ body, html {
 
 .to {
     padding-left: 25px !important;
-    background: url(../images/kftel.png) no-repeat
+    background: url(../images/kftel.png) no-repeat;
+
+    -ms-background-position-y: -3px;
+    background-position-y: -3px;;
 }
 
 .to1 {
     padding-left: 25px !important;
-    background: url(../images/app.png) no-repeat
+    background: url(../images/app.png) no-repeat;
+    -ms-background-position-y: -3px;
+    background-position-y: -3px;;
 }
 
 .to2 {
@@ -1898,7 +1939,7 @@ input {
 
 .posMoneyFoot .posMoneyFootA .posMoneyTT .posMoneyTouZiA {
     padding: 0 66px;
-    height: 50px;
+    height: 515px;
     line-height: 50px
 }
 
@@ -3271,16 +3312,16 @@ b:hover img {
 }
 
 .fyList ul li {
-    float: left;
-    width: 30px;
-    border: 1px solid #d5d5d5;
-    border-left: none;
-    background: #FFF;
-    cursor: pointer
+    float: left !important;
+    width: 30px !important;
+    border: 1px solid #d5d5d5 !important;
+    border-left: none !important;
+    background: #FFF!important;
+    cursor: pointer;
 }
 
 .fyList ul li:first-child {
-    border-left: 1px solid #d5d5d5
+    border-left: 1px solid #d5d5d5!important;
 }
 
 .fyListBg {
@@ -4042,10 +4083,13 @@ span.account_renzhengNo {
 }
 
 .aboutUList ul li div:nth-child(4) p {
-    overflow: hidden;
+
     height: 91px;
-    text-overflow: ellipsis;
-    white-space: nowrap
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
 }
 
 .inline_ul {
@@ -4752,11 +4796,7 @@ span.account_renzhengNo {
     width: 100%
 }
 
-.banCard .banOuter .banCard0 {
-    float: left;
-    display: none;
-    width: 100%
-}
+
 
 .navColor {
     color: #FFE46C !important
@@ -5064,7 +5104,7 @@ input:focus {
     height: 40px;
     outline: 0;
     border: none;
-    color: #fff
+
 }
 
 input:focus {
@@ -5078,7 +5118,8 @@ input:focus {
     width: 120px;
     height: 42px;
     text-align: right;
-    line-height: 42px
+    line-height: 42px;
+    color: #333;
 }
 
 .password .passwordFoot .passwordFootA .passwordFootC {
@@ -5098,7 +5139,7 @@ input:focus {
     width: 240px;
     height: 40px;
     background: 0 0;
-    color: #fff
+
 }
 
 .password .passwordFoot .passwordFootA .passwordFootE {
