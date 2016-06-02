@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "microsoft yahei", sans-serif, tahoma, arial, "Hiragino Sans GB";;
+    /*font-family: "microsoft yahei, sans-serif, tahoma, arial, Hiragino Sans GB";*/
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -46,7 +46,8 @@ body, html {
 }
 
 .top .topNav {
-
+font-size: 14px;
+    color: #666;
 }
 .uesr_name div {
     margin: 0 10px;
@@ -90,8 +91,8 @@ body, html {
     position: relative;
     padding-left: 30px !important;
     background: url(../images/weixin.png) no-repeat;
-    -ms-background-position-y: -3px;
-    background-position-y: -3px;;
+    -ms-background-position-y: -6px;
+    background-position-y: -6px;;
 }
 
 .w {
@@ -110,13 +111,11 @@ body, html {
 }
 
 .top {
-    padding:10px 0;
-    height: 25px;;
+    padding: 10px 0;
+    height: 20px
 }
 
-.topNav {
-    font-size: 16px
-}
+
 
 .topNav:after {
     content: " "
@@ -138,12 +137,12 @@ body, html {
 .topNav ul li {
     float: left;
     padding: 0 10px;
-    height: 25px;
-    line-height: 25px
+    height: 20px;
+    line-height: 20px;
 }
 
 .top .topNav .topNavLeft li:nth-child(1) {
-    width: 185px
+    width: 195px
 }
 
 .top .topNav .topNavLeft li:nth-child(2) {
@@ -182,8 +181,8 @@ body, html {
     padding-left: 25px !important;
     background: url(../images/kftel.png) no-repeat;
 
-    -ms-background-position-y: -3px;
-    background-position-y: -3px;;
+    -ms-background-position-y: -6px;
+    background-position-y: -6px;;
 }
 
 .to1 {
@@ -212,24 +211,27 @@ body, html {
 }
 
 .second .secondTop div:nth-child(1) {
-    float: left;
+
     margin-top: 20px;
     width: 425px;
     height: 100%
 }
 
 .second .secondTop div:nth-child(2) {
-    margin-top: 50px;
-    width: 655px;
-    height: 30px;
+    margin-top: 45px;
+    width: 672px;
+    height: 45px;
     color: #fff;
-    text-align: right
+    text-align: center;
+    font-size: 20px;
 }
 
 .second .secondTop div:nth-child(2) div {
     margin: 0;
-    margin-left: 50px;
-    width: 70px
+    margin-left: 38px;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
 }
 
 .banCard {
@@ -289,7 +291,8 @@ body, html {
 .banner .bannerZC .bannerRz .bannerRzLio div:nth-child(1) {
     width: 100%;
     height: 30px;
-    font-size: 20px
+    font-size: 20px;
+    color: #666;
 }
 
 .banner .bannerZC .bannerRz .bannerRzLio div:nth-child(2) {
@@ -299,7 +302,7 @@ body, html {
     border-radius: 5px;
     background: #F4B942;
     color: #fff;
-    font-weight: 700;
+
     line-height: 35px
 }
 
@@ -468,8 +471,11 @@ body, html {
     top: 0;
     left: 56px;
     width: 80px;
-    height: 100%;
-    line-height: 40px
+    height: 40px;
+    line-height: 47px;
+    font-weight: bold;
+    color: #333;
+    font-size: 17px;
 }
 
 #msge .mageUI {
@@ -489,7 +495,10 @@ body, html {
 
 #msge div .mageList li {
     list-style: none;
-    line-height: 40px
+    height: 40px;
+    line-height: 48px;
+    color: #666;
+    font-size: 18px;
 }
 
 #msge .mageMore {
@@ -497,7 +506,7 @@ body, html {
     top: 0;
     left: 981px;
     width: 85px;
-    line-height: 40px
+    line-height: 47px
 }
 
 .foot {
@@ -697,7 +706,7 @@ body, html {
     width: 100%;
     height: 100%;
     text-align: center;
-    line-height: 10
+    line-height: 180px;
 }
 
 .last .lastT ul li p {
@@ -725,7 +734,7 @@ body, html {
 .center .lc .lcT {
     height: 72px;
     color: #333;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 85px
 }
 
@@ -741,9 +750,10 @@ body, html {
 .center .lc .lcF .lcFD {
     position: relative;
     float: left;
-    margin-left: 20px;
+    margin-left: 17px;
     width: 260px;
     height: 385px;
+    border:1px solid #6ed3d6;
     border-radius: 5px
 }
 
@@ -755,8 +765,7 @@ body, html {
     padding-top: 15px;
     width: 100%;
     height: 55px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+
     background: #6ed3d6
 }
 
@@ -818,14 +827,17 @@ body, html {
     height: 100%;
     background: #cdf0f5
 }
-
+.font_35{
+    font-size: 35px !important;;
+    line-height: 50px;
+}
 .lc .lcF .lcFDC .lcFDCO .lcFDCI div {
     position: absolute;
     top: 64px;
     left: 5px;
     margin: 0 auto;
     width: 100%;
-    height: 200px
+    height: 85px
 }
 
 .lc .lcF .lcFDC .lcFDCO .lcFDCI div p {
@@ -834,17 +846,22 @@ body, html {
 }
 
 .lc .lcF .lcFDC .lcFDCO .lcFDCI div p:nth-child(1) {
-    font-size: 50px
+    font-size: 40px
 }
 
 .center .lc .lcFD .lcFDF {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    left: -1px;
+    bottom: -1px;
+    width: 100.7%;
     height: 40px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    background: #f56478
+    background: #F77F96;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 
 .center .lc .lcFD .lcFDF a {
@@ -852,12 +869,13 @@ body, html {
     width: 100%;
     height: 40px;
     text-align: center;
-    line-height: 40px
+    line-height: 40px;
 }
 
 .center .lc .lcF .lcFD .lcFDn {
     overflow: hidden;
-    height: 40px
+    padding:0 20px;
+    height: 40px;
 }
 
 .center .lc .lcF .lcFD .lcFDn span {
@@ -880,7 +898,7 @@ body, html {
 .center .zr .lcT {
     height: 70px;
     color: #333;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 70px
 }
 
@@ -897,9 +915,10 @@ body, html {
     position: relative;
     float: left;
     margin-left: 20px;
-    width: 260px;
-    height: 385px;
-    border-radius: 5px
+    width: 258px;
+    height: 330px;
+    border-radius: 5px;
+    border: 1px solid #6ed3d6;
 }
 
 .marginNo {
@@ -910,8 +929,7 @@ body, html {
     padding-top: 15px;
     width: 100%;
     height: 55px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+
     background: #6ed3d6
 }
 
@@ -933,7 +951,7 @@ body, html {
     position: relative;
     margin-top: 25px;
     width: 100%;
-    height: 160px
+    height: 117px
 }
 
 .center .zr .lcF .lcFDC .lcFDCO {
@@ -975,10 +993,10 @@ body, html {
 .zr .lcF .lcFDC .lcFDCO .lcFDCI div {
     position: absolute;
     top: 0;
-    left: 5px;
+    left: 0;
     margin: 0 auto;
     width: 100%;
-    height: 200px
+    height: 49px
 }
 
 .zr .lcF .lcFDC .lcFDCO .lcFDCI div p {
@@ -994,12 +1012,17 @@ body, html {
 
 .center .zr .lcFD .lcFDF {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    left: -1px;
+    bottom: -1px;
+    width: 100.7%;
     height: 40px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    background: #f56478
+    background: #F77F96;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 
 .center .zr .lcFD .lcFDF a {
@@ -1012,7 +1035,8 @@ body, html {
 
 .center .zr .lcF .lcFD .lcFDn {
     overflow: hidden;
-    height: 40px
+    height: 40px;
+    padding:0 20px;
 }
 
 .center .zr .lcF .lcFD .lcFDn span {
@@ -1229,27 +1253,29 @@ body, html {
 }
 
 .redNum {
-    color: #f56478
+    color: #f56478!important;
 }
 
 .yellowNum {
-    color: #f4b942
+    color: #f4b942!important;
 }
 
 .lightGreenNum {
-    color: #6ed3d6
+    color: #6ed3d6!important;
 }
 
 .lightOrangeNum {
-    color: #f5c25a
+    color: #f5c25a!important;
 }
-
+.lightYellowNum{
+    color: #FFE98D!important;
+}
 .greenNum {
-    color: #57d090
+    color: #57d090!important;
 }
 
 .queNum {
-    color: #7ddef7
+    color: #7ddef7!important;
 }
 
 .buy, .moneyT {
@@ -1358,7 +1384,7 @@ body, html {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     text-align: left;
-    font-size: 16px
+    font-size: 20px
 }
 
 .money .moneyCenter div ul .mCLi2 {
@@ -1387,8 +1413,9 @@ body, html {
 }
 
 .money .moneyCenter div ul .mCLi5 {
-    width: 190px;
-    line-height: 88px
+    width: 195px;
+    line-height: 75px;
+    font-size: 22px;
 }
 
 .money .moneyCenter div ul .mCLi6 {
@@ -1532,7 +1559,7 @@ body, html {
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     text-align: left;
-    font-size: 16px
+    font-size: 22px;
 }
 
 .moneyCenter div ul .mCLi2 {
@@ -1561,7 +1588,8 @@ body, html {
 }
 
 .moneyCenter div ul .mCLi5 {
-    width: 190px
+    width: 190px;
+    line-height: 50px;;
 }
 
 .moneyCenter div ul .mCLi6 {
@@ -1597,7 +1625,8 @@ body, html {
     margin-left: 15px;
     width: 170px;
     border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px
+    border-bottom-right-radius: 5px;
+    line-height: 50px;
 }
 
 
@@ -1691,7 +1720,8 @@ body, html {
 }
 
 #sell .sellCenter .mCLi5 {
-    width: 157px
+    width: 157px;
+    margin-right: 10px;
 }
 
 #sell {
@@ -1701,7 +1731,7 @@ body, html {
 
 .posrel {
     position: relative !important;
-    top: 20px
+    top: 27px
 }
 
 .lcFDQ {
@@ -1720,10 +1750,13 @@ body, html {
     margin-right: 15px
 }
 
-.lcFDQ .lcFDCQT span, .lcFDQ .lcFDQF span {
+.lcFDQ .lcFDCQT span:nth-child(odd), .lcFDQ .lcFDQF span:nth-child(odd) {
     font-size: 35px
 }
+.lcFDQ .lcFDCQT span:nth-child(even),.lcFDQ .lcFDQF span:nth-child(even) {
 
+    font-size: 21px
+}
 .lcFDQ .lcFDCQT div:nth-child(1) {
     color: #f56478
 }
@@ -3152,9 +3185,11 @@ b:hover img {
 }
 
 .line-height23 {
-    line-height: 23px
+    line-height: 23px!important;
 }
-
+.line-height25 {
+    line-height: 25px!important;
+}
 .width {
     width: 100%
 }
@@ -3313,7 +3348,7 @@ b:hover img {
     width: 30px !important;
     border: 1px solid #d5d5d5 !important;
     border-left: none !important;
-    background: #FFF!important;
+    background: #FFF;
     cursor: pointer;
 }
 
@@ -4224,7 +4259,8 @@ span.account_renzhengNo {
     right: 10px;
     width: 510px;
     color: #fff;
-    line-height: 150%
+    line-height: 150%;
+    font-size: 15px;
 }
 
 .top-manager {
