@@ -2400,12 +2400,6 @@ input {
     border-right: 1px solid #d5d5d5
 }
 
-.password {
-    position: relative;
-    margin: 30px auto;
-    width: 1100px;
-    height: 530px
-}
 
 .password .passwordTop {
     height: 95px;
@@ -5221,4 +5215,398 @@ input:focus {
 
 .block{
     display: block;
+}
+
+
+.aboutView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.aboutView .aboutViewCenter {
+    position: relative;
+    top: 50%;
+
+    margin: -367.5px auto 0;
+    padding: 25px 20px;;
+    width: 700px;
+    height: 735px;
+    background: #ffffff;;
+}
+
+.aboutView .aboutViewCenter .aboutViewFoot div:nth-child(1) {
+    margin-bottom: 20px;
+    height: 337px;
+    width: 100%;;
+}
+
+.aboutView .aboutViewCenter img {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutView .aboutViewCenter .aboutViewFoot div:nth-child(2) {
+    height: 26px;
+    line-height: 26px;
+    font-size: 20px;
+    color: #333;
+}
+
+.aboutView .aboutViewCenter .aboutViewFoot div:nth-child(3) {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999;
+}
+
+.aboutView .aboutViewCenter .aboutViewFoot div:nth-child(4) {
+    margin-top: 20px;
+    height: 92px;;
+    line-height: 22px;
+    text-overflow: ellipsis;
+}
+
+.aboutView div span {
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    color: #cccccc;
+    width: 20px;
+    text-align: center;
+    height: 20px;
+    cursor: pointer;
+}
+
+.sellMore {
+    margin: 0 auto;
+    width: 1100px;
+    background: #ffffff;;
+}
+
+.sellMore .sellMoreTop {
+    width: 1025px;
+    height: 65px;;
+    padding: 20px 38px 17px 40px;
+    border-bottom: 1px dashed #ccc;;
+}
+
+.sellMore .sellMoreTop div:nth-child(1) {
+    height: 45px;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+.sellMore .sellMoreTop div:nth-child(2) {
+    color: #999999;
+    clear: both;
+}
+
+.sellMoreFoot {
+    padding: 50px 35px;;
+    height: 275px;
+    width: 1000px;;;
+}
+
+.sellMoreFootA {
+    width: 1050px;
+    text-align: left;
+}
+
+.sellMoreFootA1 {
+    width: 440px;;;
+}
+
+.sellMoreFootA2 {
+    width: 455px
+}
+
+.sellMoreFootA3 {
+    width: 140px;
+}
+
+.sellMoreFootA1 div:nth-child(1),
+.sellMoreFootA2 div:nth-child(1),
+.sellMoreFootA3 div:nth-child(1) {
+    height: 50px;
+    line-height: 50px;
+}
+
+.sellMoreFootA1 div:nth-child(2),
+.sellMoreFootA2 div:nth-child(2),
+.sellMoreFootA3 div:nth-child(2) {
+    line-height: 110px;
+}
+
+.sellMoreFootA div span {
+    font-size: 30px;;
+}
+.registerOk{
+    height: 540px;;
+}
+.registerOk img{
+    display: block;
+    margin:0 auto;
+    margin-top: 126px;
+}
+.height75{
+    height: 75px;
+    line-height: 75px;
+}
+
+
+
+.height260px{
+    height: 260px;
+    line-height: 260px;;;
+}
+.payMoney {
+    width: 1100px;
+    margin: 0 auto;
+    background: #f9f9f9
+}
+
+.payMoneyT, .payMoneyF {
+    padding: 0 105px;
+    width: 885px;
+    margin: 0 auto;
+    background: white;
+}
+
+.payMoneyT {
+    margin: 30px 0 20PX 0;
+    height: 100px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+}
+
+.payMoneyT p:nth-child(1) {
+
+    height: 40px;;
+}
+
+.payMoneyT p:nth-child(2) {
+    height: 60px;
+    color: #999999;;
+}
+
+.payMoneyFFoot {
+    padding: 60px 295px;;
+    margin-bottom: 60px;
+    height: 345px;;
+}
+
+.payMoneyF .payMoneyFTop {
+    height: 140px;
+    border-bottom: 1px dashed #CCCCCC;
+}
+
+.payMoneyF .payMoneyFTop .payMoneyFTopA {
+    height: 70px;
+    line-height: 70px;
+    overflow: hidden;
+}
+
+.payMoney .payMoneyFTop .payMoneyFTopA div {
+    position: relative;
+    top: 25px;
+    margin-right: 3px;
+    float: left;
+    width: 26px;
+    height: 22px;
+    background: url("../images/yellowT.png") no-repeat;
+}
+
+.payMoney .payMoneyFTop .payMoneyFTopA p {
+    float: left;
+    text-align: left;
+    color: #666666;
+}
+
+.payMoney .payMoneyFTop .payMoneyFTopA span {
+    color: #000;
+    font-size: 16px;
+}
+
+.payMoney .payMoneyFTop .payMoneyFTopB {
+    height: 70px;
+    text-align: right;
+    line-height: 100px;
+}
+
+.payMoney .payMoneyFTop .payMoneyFTopB span {
+    color: #F77F96;
+    font-size: 30px;
+}
+
+.payMoneyF .payMoneyFFoot {
+    height: 85px;
+}
+.payMoney .payMoneyFFoot a{
+    color: #66CCFF
+}
+.payMoneyF .payMoneyFFoot .payMoneyFFootA {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.payMoney .payMoneyFFoot .payMoneyFFootA div {
+    position: relative;
+    top: 5px;
+    margin-right: 6px;
+    float: left;
+    width: 26px;
+    height: 22px;
+
+}
+
+.payMoney .payMoneyFFootB div {
+    text-align: center;
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;;
+    background: #F77F96;
+    border-radius: 5px;
+    color: white;;
+}
+
+.payMoney .payMoneyF .bankCard ul {
+    overflow: hidden;
+}
+
+.payMoney .payMoneyF .bankCard ul li {
+    position: relative;
+    margin-right: 27px;
+    float: left;
+    width: 201px;
+    height: 60px;
+    background: url("../images/bankK.png") no-repeat;
+    background-position: 5px;;;
+}
+
+.payMoney .payMoneyF .bankCard ul li:last-child {
+    margin-right: 0;
+}
+.payMoney .payMoneyF .bankCard ul li .bankImg{
+    position: absolute;
+    top: 19px;
+    left: 43px;
+
+}
+.payMoney .payMoneyF .bankCard ul li .bankSco{
+    position: absolute;
+    top: 22px;
+    left: 20px
+}
+.payMoney .payMoneyF .bankCard ul li .chickIco{
+    position: absolute;
+    top: 18px;
+    left: 24px
+}
+.payMoney .payMoneyF .bankCard p{
+    padding-left: 3px;
+    height: 50px;
+    line-height: 45px;
+    color: #999999;
+}
+.payMoney .payMoneyF .bankCard ul li.bgImg{
+    background: url("../images/bgBankImg.png") no-repeat;
+    background-position-y: 5px;
+}
+/*安全保障*/
+.safeNum {
+    width: 504px;
+    margin: 100px 10px 0;
+    height: 295px;
+
+}
+
+.safeNum p:nth-child(2) {
+    margin: 10px 0 35px;
+
+}
+
+.safeNum p:last-child {
+    font-size: 14px;
+    line-height: 30px;
+    color: #999;
+    font-family: "Microsoft YaHei"
+}
+
+
+
+.safeImg img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.safe1bg {
+    width: 1100px;
+    margin: 0 auto;
+
+    height: 405px;;
+    background: url("../images/safe1.png") no-repeat;
+    background-position: 100% 100%;
+    -ms-background-position: 100% 100%;
+}
+
+.safe2bg {
+    width: 1100px;
+    margin: 0 auto;
+
+    height: 405px;;
+    background: url("../images/safe2.png") no-repeat;
+    background-position: 0 100%;
+    -ms-background-position: 0 100%;
+}
+
+.safe3bg {
+    width: 1100px;
+    margin: 0 auto;
+
+    height: 405px;;
+    background: url("../images/safe3.png") no-repeat;
+    background-position: 100% 100%;
+    -ms-background-position: 100% 100%;
+}
+
+.safe4bg {
+    width: 1100px;
+    margin: 0 auto;
+
+    height: 405px;;
+    background: url("../images/safe4.png") no-repeat;
+    background-position: 0 100%;
+    -ms-background-position: 0 100%;
+}
+
+.safe5bg {
+    overflow: hidden;
+    width: 1100px;
+    margin: 0 auto;
+
+    height: 405px;;
+    background: url("../images/safe5.png") no-repeat;
+    background-position: 100% 110%;
+    -ms-background-position: 100% 110%;
+}
+
+.white100 {
+    width: 100%;
+    background: #ffffff;
+}
+
+.wheat100 {
+    width: 100%;
+    background: #f9f9f9;
 }
